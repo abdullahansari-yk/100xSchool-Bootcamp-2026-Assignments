@@ -1,3 +1,7 @@
+// {} -> []  use object.entries()
+// [] -> {}  use fromEntries
+
+// 20 
 // 1. Sum values in object arrays
 const input = {
   food: [10, 20, 30],
@@ -58,3 +62,14 @@ const result4 = Object.entries(input4).reduce((maxKey, [key, value]) => {
   //   console.log(input4[maxKey]);
 }, Object.keys(input4)[0]);
 console.log(result4);
+
+// 5. Flatten object of arrays into one array
+
+const input5 = { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] };
+
+// output => ["apple", "banana", "carrot", "pea"]
+// solution => use flat()
+
+const result5 = Object.values(input5).flat();
+console.log(result5)
+
