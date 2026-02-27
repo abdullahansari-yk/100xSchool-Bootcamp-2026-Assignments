@@ -73,3 +73,66 @@ const input5 = { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] };
 const result5 = Object.values(input5).flat();
 console.log(result5)
 
+
+// 6. Group people by city
+
+const input6 = [
+  { name: "A", city: "Delhi" },
+  { name: "B", city: "Mumbai" },
+  { name: "C", city: "Delhi" },
+];
+
+// output => { Delhi: ["A", "C"], Mumbai: ["B"] }
+// solution => use reduce because we need one final result(obj) not array of some lengths.
+
+const result6 = input6.reduce((acc, curr) => {
+  const city = curr.city;
+  const name = curr.name;
+
+  // if city doesnt exit (which is not exist in 1st iteration, oviously), then create it.
+  if (!acc[city]) {
+    acc[city] = []; // { mumbai : [] }
+  }
+
+  // push name into that city's array
+  acc[city].push(name);
+
+  return acc;
+}, {});
+
+// console.log(result6);
+
+// 7. Filter object by values > 50
+
+const input7 = { a: 20, b: 60, c: 40, d: 90 };
+
+// output => { b: 60, d: 90 }
+// solution => we need to filter the values, so use filter()
+
+const result7 = Object.fromEntries(
+  Object.entries(input7).filter(([keys, values]) => values > 50),
+);
+// console.log(result7);
+
+// 8. Find student with highest average mark
+
+const input8 = { A: [80, 90], B: [710, 75, 85] };
+//  output => A
+// solution => since we are returning only one value, thats why we should use reduce.
+
+const result8 = Object.entries(input8).reduce(
+  (acc, [student, marks]) => {
+    
+    // calculate average on current student
+    const sum = marks.reduce((total, num) => total + num, 0);
+    const avg = sum / marks.length;
+
+    if (avg > acc.avg) {
+     return { name: student, avg: avg };
+    }
+
+    return acc;
+  },
+  { name: null, avg: -Infinity },
+);
+console.log(result8.name);
