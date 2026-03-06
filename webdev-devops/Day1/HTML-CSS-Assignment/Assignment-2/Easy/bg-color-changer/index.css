@@ -14,6 +14,13 @@ body {
   height: 100vh;
   display: flex;
   align-items: end;
+  justify-content: center;
+}
+#panels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 #colorPanel {
   background-color: black;
@@ -38,7 +45,13 @@ body {
   scale: 0.9;
   cursor: pointer;
 }
-
+.inputfield {
+  font-size: 1.5vw;
+  font-weight: 600;
+  width: 8vw;
+  padding: 0 20px;
+  border-radius: 20px;
+}
 #red {
   background-color: red;
 }
@@ -60,6 +73,7 @@ body {
 #pink {
   background-color: pink;
 }
+
 #add {
   background-color: white;
   width: 3vw;
@@ -70,10 +84,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-#add:hover{
-  scale:1.09  ;
+#add:hover {
+  scale: 1.09;
   cursor: pointer;
 }
+
 @media (max-width: 1080px) {
   .colorButton {
     font-size: 2vw;
@@ -83,6 +98,11 @@ body {
     width: 4.5vw;
     height: 4.5vw;
     font-size: 4.5vw;
+  }
+  .inputfield {
+    font-size: 2.5vw;
+    width: 10vw;
+    padding: 0 20px;
   }
 }
 @media (max-width: 680px) {
@@ -94,5 +114,10 @@ body {
     width: 6vw;
     height: 6vw;
     font-size: 6vw;
+  }
+  .inputfield {
+    font-size: 4vw;
+    width: 20vw;
+    padding: 10px 20px;
   }
 }
