@@ -185,3 +185,84 @@
   border: 10px solid #1b141a;
   border-radius: 15px;
 }
+
+/* hero 3 */
+#hero3 {
+  margin-top: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: #d2c4de;
+}
+#hero3 #feature {
+  background-color: #a3004c;
+  padding: 8px 13px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#hero3 #featureHeading {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+#hero3 #featurePara {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#hero3 #featureCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 50px;
+}
+.featureCard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  border: 0.1px solid rgba(128, 128, 128, 0.501);
+  border-radius: 12px;
+  background-color: #160f14;
+}
+.featureCard:hover {
+  background: radial-gradient(
+    circle at bottom,
+    rgba(255, 0, 120, 0.35),
+    transparent 66%
+  );
+  transition: opacity 10s ease;
+}
+
+.firstFeature {
+  padding: 15px;
+  margin-top: 50px;
+  background-color: #700638;
+  border-radius: 15px;
+}
+.firstFeature svg {
+  font-size: 23px;
+  background-color: transparent;
+}
+.secondFeature {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  background-color: transparent;
+}
+.secondFeature .multi {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+}
+.secondFeature .talk {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(128, 128, 128, 0.844);
+  background-color: transparent;
+}
