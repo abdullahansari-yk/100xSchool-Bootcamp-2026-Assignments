@@ -446,7 +446,7 @@
   color: oklab(0.999994 0.0000455677 0.0000200868 / 0.7);
 }
 .trustDots {
-  margin-top: 12px;
+  margin-top: 15px;
   display: flex;
   gap: 10px;
 }
@@ -455,4 +455,39 @@
   height: 8px;
   border-radius: 50%;
   background-color: #463753;
+}
+/* signUp */
+#signUp {
+  margin-top: 120px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(#1c1014, #551928a8, #1c1014);
+  box-shadow: 0 0 15px 15px #1c1014;
+  margin-bottom: 100px;
+}
+
+#signUpTitle {
+  font-size: 36px;
+  font-weight: 700;
+  width: 400px;
+  text-align: center;
+  line-height: 40px;
+  background-color: transparent;
+}
+#signUpPara {
+  font-size: 16px;
+  font-weight: 300;
+  color: oklab(0.999994 0.0000455677 0.0000200868 / 0.7);
+  background-color: transparent;
+}
+#signUpBtn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 18px 32px;
+  border-radius: 15px;
+  background-color: #a3004c;
 }
