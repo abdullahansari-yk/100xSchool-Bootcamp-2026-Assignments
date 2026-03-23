@@ -382,3 +382,77 @@
   border-radius: 7px;
   background-color: #970449;
 }
+
+/* trust */
+
+#trustName {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#trustDetails {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.trustPara {
+  width: 550px;
+  font-size: 24px;
+  line-height: 39px;
+  text-align: center;
+}
+.trustBox {
+  border: 0.5px solid rgba(128, 128, 128, 0.278);
+  font-size: 16px;
+  font-weight: 600;
+  color: oklch(0.827 0.119 306.383);
+  background-color: #1e161a;
+  padding: 19px 25px;
+  border-radius: 12px;
+}
+.users {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+#profilePhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #a0004b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profileDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#profileDetails #name {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+#profileDetails #profession {
+  font-size: 14px;
+  font-weight: 300;
+  color: oklab(0.999994 0.0000455677 0.0000200868 / 0.7);
+}
+.trustDots {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+.trustDots div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #463753;
+}
