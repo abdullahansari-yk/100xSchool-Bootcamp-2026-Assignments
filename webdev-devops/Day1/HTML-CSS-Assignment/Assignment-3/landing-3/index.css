@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #392e28;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-image: url(background.png);
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+nav #left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+nav #left img {
+  width: 30px;
+}
+nav #middle {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 17px;
+  font-weight: 400;
+}
+nav #right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 17px;
+  font-weight: 400;
+}
+nav #line {
+  width: 0.1px;
+  height: 35px;
+  background-color: #392e28;
+}
+
+nav #contactBtn {
+  border-bottom: 2px solid #392e28;
+  cursor: pointer;
+}
+
+/* hero1   */
+#hero1 {
+  /* background-color: red; */
+  display: flex;
+}
+#heroTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  /* background-color: rgba(102, 51, 153, 0.392); */
+  gap: 25px;
+}
+#mainTxt {
+  font-size: 70px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+  text-align: center;
+}
+#mainTxt span {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 100;
+}
+#paraTxt {
+  font-size: 17px;
+}
+#startBtn {
+  background-color: #392e28;
+  color: white;
+  padding: 10px;
+  width: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#homeImg {
+  flex: 1;
+}
+
+#homeImg img {
+  width: 550px;
+  height: 400px;
+}
