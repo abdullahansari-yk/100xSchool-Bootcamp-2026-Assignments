@@ -1,9 +1,0 @@
-I received a screenshot image in the conversation.
-
-To include it in the project and have it display in the README:
-
-1. Save the screenshot file you were given in this folder.
-2. Name it exactly: mockup.png
-3. The README will then show the image: ![Landing Page Mockup](mockup.png)
-
-If you want me to save the screenshot here for you, confirm and attach the filename you'd like me to use.
