@@ -177,3 +177,36 @@ btns.forEach((btn) => {
     }
   });
 });
+
+// function dragstartHandler(ev) {
+//   ev.dataTransfer.setData("text", ev.target.id);
+// }
+// function dragoverHandler(ev) {
+//   ev.preventDefault();
+// }
+
+// function dropHandler(ev) {
+//   ev.preventDefault();
+//   const data = ev.dataTransfer.getData("text");
+//   ev.target.appendChild(document.getElementById(data));
+// }
+
+let draggedCard = null;
+
+function dragstartHandler(event) {
+  draggedCard = event.target;
+}
+
+function dragoverHandler(event) {
+  event.preventDefault(); // very important
+}
+
+function dropHandler(event) {
+  event.preventDefault();
+
+  const dropZone = event.target.closest(".cards");
+
+  if (dropZone && draggedCard) {
+    dropZone.appendChild(draggedCard);
+  }
+}
