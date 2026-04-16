@@ -23,6 +23,7 @@ const ans = input.reduce((acc, curr) => {
   const amount = curr.amount;
 
   if (acc[user]) {
+    acc[user]+=amount
   } else {
     acc[user] = amount;
   }
