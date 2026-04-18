@@ -21,7 +21,7 @@
 const input = [10, 20, 10, 30, 20, 20];
 // const input = [5, 5, 5, 5];
 
-// solition 1 : using reduce
+// solution 1 : using reduce
 function countOccurrences(array) {
   const ans = input.reduce((acc, curr) => {
     if (acc[curr]) {
@@ -37,5 +37,18 @@ function countOccurrences(array) {
   return ans;
 }
 
-const result=countOccurrences(input);
-console.log(result);
+const ans1 = countOccurrences(input);
+console.log(ans1);
+
+// solution 2: using for of loop
+function countOccurrences2(arr) {
+  const result = {};
+  for (let char of arr) {
+    result[char] = (result || 0) + 1;
+  }
+
+  return result;
+}
+
+const ans2 = countOccurrences(input);
+console.log(ans2);
