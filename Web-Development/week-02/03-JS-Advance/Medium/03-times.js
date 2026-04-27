@@ -8,20 +8,22 @@ Hint - use Date class exposed in JS
 */
 
 function calculateTime(n) {
-  //   const start = new Date();
-  const start = performance.now();
+  const start = Date.now();
+  console.log(start)
+  // const start = performance.now();
   let sum = 0;
   for (let i = 1; i <= n; i++) {
     sum += i;
   }
-  //   const end = new Date();
-  const end = performance.now();
-  const timeTaken = (end - start) / 1000;
+  const end = Date.now();
+  console.log(end)
+  // const end = performance.now();
+  const timeTaken = end - start;
 
   console.log("sum: ", sum);
-  console.log("time taken: c", timeTaken, "seconds");
+  console.log("time taken: c", timeTaken, "milliseconds");
 }
 
 calculateTime(100);
-calculateTime(100000);
-calculateTime(1000000000);
+// calculateTime(100000);
+// calculateTime(1000000000);
